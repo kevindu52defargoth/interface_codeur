@@ -1,2 +1,4 @@
 *.bak
 /output_files/
+/db/
+*.qar
