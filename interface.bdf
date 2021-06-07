@@ -20,7 +20,7 @@ applicable agreement for further details.
 */
 (header "graphic" (version "1.4"))
 (symbol
-	(rect 416 152 600 264)
+	(rect 400 136 584 248)
 	(text "compteur" (rect 5 0 52 12)(font "Arial" ))
 	(text "inst" (rect 8 96 25 108)(font "Arial" ))
 	(port

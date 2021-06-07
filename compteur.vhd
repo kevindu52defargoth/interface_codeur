@@ -8,8 +8,7 @@ PORT (
         h: in STD_LOGIC;   --signal d'activation
 		  Up_Down : in BIT;
 		  
-
-		  sortie: out NATURAL range 0 to 999999  --siganl de sortie
+		  sortie: out INTEGER range 0 to 999999  --siganl de sortie
     );
 END;
 	
