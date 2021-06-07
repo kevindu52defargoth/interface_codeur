@@ -5,7 +5,7 @@ USE ieee.std_logic_arith.all;
 ENTITY compteur is
 PORT (
         raz  : in  BIT;   --signal de remise a zero
-        activation: in STD_LOGIC;   --signal d'activation
+        h: in STD_LOGIC;   --signal d'activation
 		  Up_Down : in BIT;
 		  
 
@@ -14,12 +14,16 @@ PORT (
 END;
 	
 ARCHITECTURE archi of compteur is
-signal tampon : NATURAL RANGE 0 to 1023 := 0;
+signal tampon : INTEGER RANGE -1024 to 1023 := 0;
 BEGIN
 P1: PROCESS(raz,h)
 BEGIN
-	IF raz = '0' THEN tampon <= 0;-- instruction asynchrone
-		ELSIF rising_edge(h)THEN tampon <= tampon + 1;
+	IF raz = '0' THEN tampon <= 0;
+	ELSIF rising_edge(h)THEN 
+			if Up_down = '1'
+			then tampon <= tampon + 1;
+			else tampon <= -1;
+			end if;
 		ELSE tampon <= tampon ;
 	END IF;
 END PROCESS;
