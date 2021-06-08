@@ -217,6 +217,56 @@ applicable agreement for further details.
 		(rectangle (rect 16 16 192 96))
 	)
 )
+(symbol
+	(rect 1048 224 1296 336)
+	(text "dec7seg" (rect 5 0 46 12)(font "Arial" ))
+	(text "inst4" (rect 8 96 31 108)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "unite[3..0]" (rect 0 0 49 12)(font "Arial" ))
+		(text "unite[3..0]" (rect 21 27 70 39)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32)(line_width 3))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "dizaine[3..0]" (rect 0 0 60 12)(font "Arial" ))
+		(text "dizaine[3..0]" (rect 21 43 81 55)(font "Arial" ))
+		(line (pt 0 48)(pt 16 48)(line_width 3))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "centaine[3..0]" (rect 0 0 67 12)(font "Arial" ))
+		(text "centaine[3..0]" (rect 21 59 88 71)(font "Arial" ))
+		(line (pt 0 64)(pt 16 64)(line_width 3))
+	)
+	(port
+		(pt 248 32)
+		(output)
+		(text "segments_unite[6..0]" (rect 0 0 103 12)(font "Arial" ))
+		(text "segments_unite[6..0]" (rect 140 27 243 39)(font "Arial" ))
+		(line (pt 248 32)(pt 232 32)(line_width 3))
+	)
+	(port
+		(pt 248 48)
+		(output)
+		(text "segments_dizaine[6..0]" (rect 0 0 114 12)(font "Arial" ))
+		(text "segments_dizaine[6..0]" (rect 131 43 245 55)(font "Arial" ))
+		(line (pt 248 48)(pt 232 48)(line_width 3))
+	)
+	(port
+		(pt 248 64)
+		(output)
+		(text "segments_centaine[6..0]" (rect 0 0 121 12)(font "Arial" ))
+		(text "segments_centaine[6..0]" (rect 125 59 246 71)(font "Arial" ))
+		(line (pt 248 64)(pt 232 64)(line_width 3))
+	)
+	(drawing
+		(rectangle (rect 16 16 232 96))
+	)
+)
 (connector
 	(pt 672 128)
 	(pt 736 128)
@@ -298,18 +348,6 @@ applicable agreement for further details.
 	(pt 464 464)
 )
 (connector
-	(pt 672 112)
-	(pt 1040 112)
-)
-(connector
-	(pt 672 272)
-	(pt 1040 272)
-)
-(connector
-	(pt 672 432)
-	(pt 1040 432)
-)
-(connector
 	(pt 128 128)
 	(pt 464 128)
 )
@@ -340,6 +378,34 @@ applicable agreement for further details.
 (connector
 	(pt 128 112)
 	(pt 168 112)
+)
+(connector
+	(pt 1048 272)
+	(pt 672 272)
+)
+(connector
+	(pt 1048 288)
+	(pt 1024 288)
+)
+(connector
+	(pt 1024 288)
+	(pt 1024 432)
+)
+(connector
+	(pt 672 432)
+	(pt 1024 432)
+)
+(connector
+	(pt 672 112)
+	(pt 1024 112)
+)
+(connector
+	(pt 1048 256)
+	(pt 1024 256)
+)
+(connector
+	(pt 1024 256)
+	(pt 1024 112)
 )
 (junction (pt 168 272))
 (junction (pt 168 112))
