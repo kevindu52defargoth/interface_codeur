@@ -8,22 +8,24 @@ END dec7seg;
 
 ARCHITECTURE numero1 OF dec7seg IS
 BEGIN
-process(unite)
+
+--unité
+	WITH unite SELECT
+		segments_unite <= 
+				"0000001" when 0,
+				"1001111" when 1,
+				"0010010" when 2,
+				"0000110" when 3,
+				"1001100" when 4,
+				"0100100" when 5,
+				"0100000" when 6,
+				"0001111" when 7,
+				"0000000" when 8,
+				"0000100" when 9,
+				"0000000" when others;
+process(dizaine)
 Begin
-	--unité
-	CASE unite IS
-	 when 0=> segments_unite <= "0000001";   
-    when 1=> segments_unite <= "1001111";
-    when 2=> segments_unite <= "0010010";
-    when 3=> segments_unite <= "0000110";
-    when 4=> segments_unite <= "1001100";
-    when 5=> segments_unite <= "0100100";
-    when 6=> segments_unite <= "0100000";
-    when 7=> segments_unite <= "0001111";
-    when 8=> segments_unite <= "0000000";   
-    when 9=> segments_unite <= "0000100";
-	END CASE;
-	
+
 	--dizaine
 	CASE dizaine is
 	when 0=> segments_dizaine <= "0000001";  
@@ -37,7 +39,11 @@ Begin
 	when 8=> segments_dizaine <= "0000000";  
 	when 9=> segments_dizaine <= "0000100";
 	END CASE;
+END process;
 
+
+process(centaine)
+begin
 	--centaine
 	CASE centaine is
 	when 0=> segments_centaine <= "0000001";  
