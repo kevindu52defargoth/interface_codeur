@@ -47,8 +47,8 @@ applicable agreement for further details.
 	(port
 		(pt 184 32)
 		(output)
-		(text "sortie[19..0]" (rect 0 0 44 12)(font "Arial" ))
-		(text "sortie[19..0]" (rect 119 27 163 39)(font "Arial" ))
+		(text "sortie[4..0]" (rect 0 0 42 12)(font "Arial" ))
+		(text "sortie[4..0]" (rect 121 27 163 39)(font "Arial" ))
 		(line (pt 184 32)(pt 168 32)(line_width 3))
 	)
 	(drawing

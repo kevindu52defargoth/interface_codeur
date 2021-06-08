@@ -7,13 +7,13 @@ PORT (
         raz  : in  BIT;   --signal de remise a zero
         h: in STD_LOGIC;   --signal d'activation
 		  Up_Down : in BIT;
-		  
-		  sortie: out INTEGER range 0 to 999999  --siganl de sortie
+
+		  sortie: out NATURAL range 0 to 16  --siganl de sortie
     );
 END;
 	
 ARCHITECTURE archi of compteur is
-signal tampon : INTEGER RANGE -1024 to 1023 := 0;
+signal tampon : NATURAL RANGE 0 to 15 := 0;
 BEGIN
 P1: PROCESS(raz,h)
 BEGIN
@@ -21,7 +21,7 @@ BEGIN
 	ELSIF rising_edge(h)THEN 
 			if Up_down = '1'
 			then tampon <= tampon + 1;
-			else tampon <= -1;
+			else tampon <= tampon -1;
 			end if;
 		ELSE tampon <= tampon ;
 	END IF;

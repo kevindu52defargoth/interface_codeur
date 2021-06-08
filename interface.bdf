@@ -19,8 +19,56 @@ Altera or its authorized distributors.  Please refer to the
 applicable agreement for further details.
 */
 (header "graphic" (version "1.4"))
+(pin
+	(input)
+	(rect 176 152 344 168)
+	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
+	(text "raz" (rect 5 0 21 12)(font "Arial" ))
+	(pt 168 8)
+	(drawing
+		(line (pt 84 12)(pt 109 12))
+		(line (pt 84 4)(pt 109 4))
+		(line (pt 113 8)(pt 168 8))
+		(line (pt 84 12)(pt 84 4))
+		(line (pt 109 4)(pt 113 8))
+		(line (pt 109 12)(pt 113 8))
+	)
+	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
+)
+(pin
+	(input)
+	(rect 168 184 336 200)
+	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
+	(text "h" (rect 5 0 11 12)(font "Arial" ))
+	(pt 168 8)
+	(drawing
+		(line (pt 84 12)(pt 109 12))
+		(line (pt 84 4)(pt 109 4))
+		(line (pt 113 8)(pt 168 8))
+		(line (pt 84 12)(pt 84 4))
+		(line (pt 109 4)(pt 113 8))
+		(line (pt 109 12)(pt 113 8))
+	)
+	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
+)
+(pin
+	(input)
+	(rect 168 216 336 232)
+	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
+	(text "clock" (rect 5 0 31 12)(font "Arial" ))
+	(pt 168 8)
+	(drawing
+		(line (pt 84 12)(pt 109 12))
+		(line (pt 84 4)(pt 109 4))
+		(line (pt 113 8)(pt 168 8))
+		(line (pt 84 12)(pt 84 4))
+		(line (pt 109 4)(pt 113 8))
+		(line (pt 109 12)(pt 113 8))
+	)
+	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
+)
 (symbol
-	(rect 400 136 584 248)
+	(rect 392 152 576 264)
 	(text "compteur" (rect 5 0 52 12)(font "Arial" ))
 	(text "inst" (rect 8 96 25 108)(font "Arial" ))
 	(port
@@ -47,11 +95,35 @@ applicable agreement for further details.
 	(port
 		(pt 184 32)
 		(output)
-		(text "sortie[19..0]" (rect 0 0 59 12)(font "Arial" ))
-		(text "sortie[19..0]" (rect 114 27 173 39)(font "Arial" ))
+		(text "sortie[4..0]" (rect 0 0 53 12)(font "Arial" ))
+		(text "sortie[4..0]" (rect 119 27 172 39)(font "Arial" ))
 		(line (pt 184 32)(pt 168 32)(line_width 3))
 	)
 	(drawing
 		(rectangle (rect 16 16 168 96))
 	)
+)
+(connector
+	(pt 344 160)
+	(pt 344 184)
+)
+(connector
+	(pt 344 184)
+	(pt 392 184)
+)
+(connector
+	(pt 336 192)
+	(pt 392 192)
+)
+(connector
+	(pt 392 192)
+	(pt 392 200)
+)
+(connector
+	(pt 336 224)
+	(pt 392 224)
+)
+(connector
+	(pt 392 224)
+	(pt 392 216)
 )
