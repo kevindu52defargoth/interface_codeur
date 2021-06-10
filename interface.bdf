@@ -69,7 +69,7 @@ applicable agreement for further details.
 )
 (pin
 	(input)
-	(rect -152 160 32 176)
+	(rect -160 160 24 176)
 	(text "INPUT" (rect 141 0 169 10)(font "Arial" (font_size 6)))
 	(text "unite_initialle[3..0]" (rect 5 0 94 12)(font "Arial" ))
 	(pt 184 8)
@@ -101,7 +101,7 @@ applicable agreement for further details.
 )
 (pin
 	(input)
-	(rect -168 184 32 200)
+	(rect -160 184 40 200)
 	(text "INPUT" (rect 157 0 185 10)(font "Arial" (font_size 6)))
 	(text "dizaine_initialle[3..0]" (rect 5 0 105 12)(font "Arial" ))
 	(pt 200 8)
@@ -448,26 +448,6 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 96 320)
-	(pt 96 192)
-	(bus)
-)
-(connector
-	(pt 96 192)
-	(pt 32 192)
-	(bus)
-)
-(connector
-	(pt 32 160)
-	(pt 32 168)
-	(bus)
-)
-(connector
-	(pt 472 160)
-	(pt 32 160)
-	(bus)
-)
-(connector
 	(pt 472 480)
 	(pt 72 480)
 	(bus)
@@ -480,6 +460,26 @@ applicable agreement for further details.
 (connector
 	(pt 72 216)
 	(pt 40 216)
+	(bus)
+)
+(connector
+	(pt 96 320)
+	(pt 96 192)
+	(bus)
+)
+(connector
+	(pt 96 192)
+	(pt 40 192)
+	(bus)
+)
+(connector
+	(pt 24 160)
+	(pt 24 168)
+	(bus)
+)
+(connector
+	(pt 472 160)
+	(pt 24 160)
 	(bus)
 )
 (junction (pt 168 112))

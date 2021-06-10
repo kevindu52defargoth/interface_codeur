@@ -2,3 +2,5 @@
 /output_files/
 /db/
 *.qar
+incremental_db/compiled_partitions/
+db
