@@ -11,3 +11,25 @@ PORT (
 );
 END;
 
+ARCHITECTURE archi of monostable is
+signal tampon : Std_logic;
+BEGIN
+P1: PROCESS(Voie)
+BEGIN
+	if rising_edge(Voie)
+	then tampon <= '1';
+	end if;
+END process;
+
+P2: PROCESS(horloge)
+BEGIN
+	if rising_edge(horloge)
+	then FM <= tampon;
+	elsif falling_edge(horloge)
+	then FM <= '0';
+		tampon <= '0';
+	end if;
+end process;
+
+
+end archi;
