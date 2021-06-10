@@ -9,8 +9,7 @@ PORT (
 		  Up_Down : in BIT;
 
 		  sortie: out NATURAL range 0 to 15;  --siganl de sortie
-		  fin_cycle : out STD_LOGIC;
-		  Up_down_sortie : out BIT
+		  fin_cycle : out STD_LOGIC
     );
 END;
 	
@@ -27,14 +26,12 @@ BEGIN
 				IF tampon = 0
 				THEN 
 					fin_cycle <= '1';
-					Up_Down_sortie <= '1';
 				END IF;
 			else 
 				tampon <= tampon -1;
 				IF tampon = 15
 				THEN 
 					fin_cycle <= '1';
-					Up_Down_sortie <= '0';
 				End if;
 			end if;
 		ELSE tampon <= tampon ;

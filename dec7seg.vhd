@@ -38,6 +38,7 @@ Begin
 	when 7=> segments_dizaine <= "0001111";
 	when 8=> segments_dizaine <= "0000000";  
 	when 9=> segments_dizaine <= "0000100";
+	when OTHERS => segments_dizaine <= "0000000";
 	END CASE;
 END process;
 
@@ -56,6 +57,7 @@ begin
 	when 7=> segments_centaine <= "0001111";
 	when 8=> segments_centaine <= "0000000";  
 	when 9=> segments_centaine <= "0000100";
+	when OTHERS => segments_centaine <= "0000000";
 	END CASE;
 
 
