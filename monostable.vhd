@@ -23,12 +23,10 @@ END process;
 
 P2: PROCESS(horloge)
 BEGIN
-	if rising_edge(horloge)
-	then FM <= tampon;
-	elsif falling_edge(horloge)
-	then FM <= '0';
-		tampon <= '0';
+	if falling_edge(horloge)
+	then tampon <= '0';
 	end if;
+	FM <= tampon;
 end process;
 
 
