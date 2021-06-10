@@ -1,17 +1,18 @@
 Quartus II Archive log --	C:/altera/13.0sp1/interface/interface.qarlog
 
 Archive:	C:/altera/13.0sp1/interface/interface.qar
-Date:		Mon Jun 07 22:04:56 2021
+Date:		Thu Jun 10 14:02:11 2021
 Quartus II 32-bit		13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition
 
 	=========== Files Selected: ===========
 C:/altera/13.0sp1/interface/compteur.vhd
+C:/altera/13.0sp1/interface/dec7seg.vhd
 C:/altera/13.0sp1/interface/incremental_db/compiled_partitions/interface.db_info
 C:/altera/13.0sp1/interface/interface.bdf
 C:/altera/13.0sp1/interface/interface.qpf
 C:/altera/13.0sp1/interface/interface.qsf
 c:/altera/13.0sp1/quartus/bin/assignment_defaults.qdf
-	======= Total: 6 files to archive =======
+	======= Total: 7 files to archive =======
 
 	================ Status: ===============
 All files archived successfully.
