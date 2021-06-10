@@ -7,6 +7,7 @@ PORT (
         raz  : in  BIT;   --signal de remise a zero
         h: in STD_LOGIC;   --signal d'activation
 		  Up_Down : in BIT;
+		  Valeur_initial : in NATURAL range 0 to 15;
 
 		  sortie: out NATURAL range 0 to 15;  --siganl de sortie
 		  fin_cycle : out STD_LOGIC
@@ -18,7 +19,9 @@ signal tampon : NATURAL RANGE 0 to 15 := 0;
 BEGIN
 P1: PROCESS(raz,h)
 BEGIN
-	IF raz = '0' THEN tampon <= 0;
+	IF raz = '0' 
+	THEN 
+		tampon <= Valeur_initial;
 	ELSIF rising_edge(h)THEN 
 			if Up_down = '1'
 			then 
